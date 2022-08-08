@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 10px;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+h2 {
+  color: var(--Very-dark-desaturated-blue);
+}
+
+span {
+  color: var(--Dark-grayish-blue);
+  margin-left: 0.3rem;
+}
+
+.card-section {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Dark-cyan);
+}
+
+.card-img-top {
+  top: -75%;
+  right: 48%;
+  position: fixed;
+}
+
+.card-img-bottom {
+  top: 50%;
+  left: 50%;
+  position: fixed;
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+  border-radius: 1.2rem;
+  width: 400px;
+}
+
+.card-bg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.blue-background {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.card-img-box {
+  position: relative;
+}
+
+.card-img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.card-info {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.grey-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 1.7rem;
+}
+
+.card-details {
+  border-top: 0.01rem solid rgb(214, 214, 214);
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.followers-number {
+  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+}
+
+.grey-text-small {
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: var(--Dark-grayish-blue);
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 375px) {
+  .card-info {
+    padding-top: 4.5rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .grey-text {
+    font-size: .9rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .card-info {
+    padding-top: 5rem;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .grey-text {
+    font-size: 1rem;
+    margin-bottom: 2.2rem;
+  }
+}
